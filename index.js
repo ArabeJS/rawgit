@@ -48,7 +48,7 @@ app.use(express.static(config.publicDir));
 app.get('/', (req, res) => {
   res.set('Cache-Control', 'max-age=60');
 
-  res.render('news/sunset', {
+  res.render('index', {
     includeMetaDescription: true
   });
 });
